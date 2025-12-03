@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendaftaran Rumah Sakit</title>
+  <link rel="stylesheet" href="FAJRI.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- ====== SIDEBAR MENU ====== -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <h2>RS Sehat Sentosa</h2>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active">Daftar</a>
+        <a href="#">Cek Up</a>
+        <a href="#">Resep</a>
+    <a href="https://web.whatsapp.com/">WhatApps</a>
+      </nav>
+    </aside>
+
+    <!-- ====== KONTEN UTAMA ====== -->
+    <main class="content">
+      <!-- Logo kanan atas -->
+      <img src="c:\Users\user\Downloads\haram-logo-information-is-important-indicate-that-product-is-halal-moslem-islam_344220-367.jpg"
+           alt="Logo Rumah Sakit" class="logo-top">
+
+      <h1>Formulir Pendaftaran Pasien</h1>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nama">Nama Pasien</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama pasien" required />
+          </div>
+
+          <div class="form-group">
+            <label for="tgl_lahir">Tanggal Lahir</label>
+            <input type="date" id="tgl_lahir" name="tgl_lahir" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="usia">Usia</label>
+            <input type="number" id="usia" name="usia" placeholder="Masukkan usia" min="0" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn simpan">Simpan</button>
+          <button type="reset" class="btn batal">Batal</button>
+        </div>
+      </form>
+
+      <!-- Logo kiri bawah -->
+      <img src="c:\Users\user\Downloads\Doktor-meme-1.jpg"
+           alt="Logo Rumah Sakit" class="logo-bottom">
+    </main>
+  </div>
+
+</body>
+</html>

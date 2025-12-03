@@ -1,0 +1,175 @@
+/* === Reset dan font === */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Layout utama (wrapper flex) === */
+body {
+  margin: 0;
+  background: #f0f4f8;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  background-color: #0066cc;
+  color: white;
+  width: 230px;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-section h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* === MENU SAMPING === */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #004c99;
+}
+
+/* === KONTEN UTAMA === */
+.content {
+  flex: 1;
+  position: relative;
+  padding: 40px;
+  background: #fff;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+/* === LOGO KANAN ATAS === */
+.logo-top {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+/* === LOGO KIRI BAWAH === */
+.logo-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: -180px;
+  width: 90px;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* === Judul Form === */
+.content h1 {
+  color: #0066cc;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* === FORM === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group.full {
+  flex: 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === Tombol === */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.simpan {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.btn.simpan:hover {
+  background-color: #004c99;
+}
+
+.btn.batal {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn.batal:hover {
+  background-color: #999;
+}
